@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/styles/style.css" />
+    <link rel="stylesheet" href="/src/styles/editor.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, initial-scale=1.0"
+    />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div class="editor">
+      <div class="dev-window">
+        <div class="panel" id="hierarchy-panel">
+          <div class="heading-tab">Hierarchy</div>
+        </div>
+        <div class="vertical-resizer">
+          <div class="paddle"></div>
+        </div>
+        <div class="panel" id="scene-panel">
+          <div class="heading-tab">Scene</div>
+        </div>
+        <div class="vertical-resizer">
+          <div class="paddle"></div>
+        </div>
+        <div class="panel" id="properties-panel">
+          <div class="heading-tab">Properties</div>
+        </div>
+      </div>
+      <div class="horizontal-resizer">
+        <div class="paddle horizontal"></div>
+      </div>
+      <div class="assets-window">
+        <div class="panel" id="folders-panel">
+          <div class="heading-tab">Folders</div>
+        </div>
+        <div class="vertical-resizer">
+          <div class="paddle"></div>
+        </div>
+        <div class="panel" id="files-panel">
+          <div class="heading-tab">Files</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/utils/resize_windows.ts"></script>
+  </body>
+</html>
